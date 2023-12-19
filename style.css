@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+	--primary-color: #2ae47e;
+	--primary-text-color: #000;
+	--hover-color: #3cdb84;
+	--secondary-color: #fff;
+
+	--input-color: #f3f1f7;
+	--input-dark-color: #d2d0d6;
+
+	--border-radius: 25px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--primary-color);
+	color: var(--primary-text-color);
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	min-height: 35%;
+	background-color: var(--secondary-color);
+	border-radius: var(--border-radius);
+	padding: 4rem 2rem;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 0px 0px 100px -40px rgba(0, 0, 0, 0.75);
+}
+
+.container h1 {
+	margin-bottom: 1rem;
+}
+
+.input-box {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.input-box label {
+	font-size: 1.4rem;
+}
+
+.input-box input {
+	width: 100%;
+	border: none;
+	padding: 1rem 1rem;
+	font-size: 1rem;
+	background-color: var(--input-color);
+	border-bottom: 2px solid var(--input-dark-color);
+	transition: all 0.5s ease;
+}
+
+.input-box input:focus {
+	border-bottom: 5px solid var(--input-dark-color);
+}
+
+.thumbnail-box {
+	width: 100%;
+	height: 300px;
+	border: 2px solid var(--primary-color);
+	border-style: dashed;
+	position: relative;
+}
+
+.thumbnail-box .thumbnail-camera {
+	width: 250px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/* https://isotropic.co/tool/hex-color-to-css-filter/ */
+	filter: invert(91%) sepia(88%) saturate(1223%) hue-rotate(67deg)
+		brightness(97%) contrast(83%);
+}
+
+.thumbnail-box .thumbnail {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+}
+
+button {
+	margin-top: 1rem;
+	border: none;
+	outline: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	padding: 1rem 2rem;
+	border-radius: var(--border-radius);
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--hover-color);
+}
+
+#swendoz {
+	font-size: 1.3rem;
+	color: var(--primary-text-color);
+	opacity: 0.5;
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

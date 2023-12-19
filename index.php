@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Thumbnail by Swendoz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Download Thumbnail</h1>
+
+        <div class="input-box">
+            <label for="video-url">Paste video url</label>
+            <input type="url" id="video-url"
+                placeholder="https://www.youtube.com/watch?v=FucPPCPDd2Y&list=PLpwngcHZlPaf1aw42OGyitm4jh2Dlmi9c&index=2">
+        </div>
+
+        <div class="thumbnail-box">
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-camera-512.png" alt="camera"
+                class="thumbnail-camera">
+            <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+                alt="thumbnail" class="thumbnail">
+        </div>
+
+        <button>Download Thumbnail</button>
+    </div>
+
+    <div id="swendoz">
+        Made by Swendoz
+    </div>
+</body>
+
+</html>
